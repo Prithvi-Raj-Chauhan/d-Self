@@ -1,0 +1,15 @@
+  {{#if notes.length}}
+<div class="container my-4 home-page-cont">
+        {{#each notes}}
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h4 class="card-title">{{this.dateTime}}</h5>
+          <h5 class="card-subtitle mb-2 text-muted">{{this.title}}</h6>
+          <p class="card-text">{{this.details}}</p>
+          <a href="/delete/{{this.hash}}" class="btn btn-danger">Delete</a>
+          <a href="/edit/{{this.hash}}" class="btn btn-primary">Edit</a>
+        </div>
+      </div>
+        {{/each}}
+</div>
+  {{/if}} 

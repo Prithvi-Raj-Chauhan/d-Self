@@ -1,8 +1,0 @@
-.home-page-cont{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-}
-
-.card{ min-height: 17rem }
-.card-text{ min-height: 6rem }

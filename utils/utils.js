@@ -28,4 +28,12 @@ function todaysHash(){
         dateTime: getDate()
     };
 }
-module.exports = todaysHash()
+
+const exporting = {
+    todaysHash: todaysHash,
+    getDate: getDate,
+    getTime: getTime,
+    completeDateTime: completeDateTime
+}
+
+module.exports = exporting

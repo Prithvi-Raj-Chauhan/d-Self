@@ -4,7 +4,7 @@ const path = require('path')
 
 let notes = require("../utils/notes").reverse(); // Takes the notes fromt the notes.js
 												// and reverses it so it is newest first
-const todaysHash = require("../utils/utils");
+const { todaysHash, getDate } = require("../utils/utils");
 
 const router = express.Router(); // Initialising the router of the app
 
@@ -16,9 +16,10 @@ function write(){
 }
 
 router.get("/", (req, res) => {
+	// Todo: add the logic of finding the differnece between TODAY, YESTERDAY and other dates
 	  res.render('home', {
 		  notes: notes,
-		  customstyle: `<link rel="stylesheet" href="style.css">`
+		  customstyle: `<link rel="stylesheet" href="style.css">`,
 	  });
 });
 

@@ -30,10 +30,10 @@ function todaysHash(){
 }
 
 const exporting = {
-    todaysHash: todaysHash,
-    getDate: getDate,
-    getTime: getTime,
-    completeDateTime: completeDateTime
+    todaysHash,
+    getDate,
+    getTime,
+    completeDateTime
 }
 
 module.exports = exporting

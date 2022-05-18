@@ -1,11 +1,11 @@
 <form class="container mt-5" style="width: 65%;" action="/enter" method="post">
     <div class="mb-3">
   <label class="form-label">Describe today in as few words as possible</label>
-  <input type="text" class="form-control" name="title" id="title" value="{{inputVvalue}}">
+  <input type="text" class="form-control" name="title" id="title" value="{{inputVvalue}}" required>
 </div>
 <div class="mb-3">
   <label class="form-label">Tell in detail about today</label>
-  <textarea class="form-control" rows="3" name="details">{{textAreaValue}}</textarea>
+  <textarea class="form-control" rows="3" name="details" required>{{textAreaValue}}</textarea>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>

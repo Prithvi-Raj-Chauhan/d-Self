@@ -28,9 +28,9 @@ router.route('/enter')
 	res.render('enter');
 })
 .post((req, res) => {
-	notes.push({ ...req.body, ...todaysHash }); // Pushes an object containing
-												// 1. The request body
-												// 2. The hashing corresponding to the date 
+	notes = [{ ...req.body, ...todaysHash() }, ...notes]// Pushes an object containing
+													// 1. The request body
+													// 2. The hashing corresponding to the date 
 	write();
 	res.redirect('/')
 })
